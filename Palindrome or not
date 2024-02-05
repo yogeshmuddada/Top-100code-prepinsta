@@ -1,0 +1,26 @@
+Time complexity: O(n)
+code</>:
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      String str=s.nextLine();
+      int k=0;
+      for(int i=str.length()-1;i>=0;i--)
+      {
+          if(str.charAt(i)==str.charAt(k))
+          {
+              k+=1;
+          }
+          else{
+              k=-1;
+          break;
+          }
+      }
+      if(k==-1)
+      System.out.println("not");
+      else
+      System.out.println("yes");
+    }
+}
