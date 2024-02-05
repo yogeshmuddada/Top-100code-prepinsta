@@ -1,0 +1,32 @@
+code</>:
+
+import java.util.*;
+class Main{
+pubic static void main(String args[])
+{
+  Scanner scan=new Scanner(System.in);
+  String str=new nextLine();
+  int f[]=new int[str.length()];
+  char s[]=str.toCharArray();
+  for(int i=0;i<str.length();i++)
+  {
+    f[i]=1;
+    for(int j=i+1;j<str.length();j++)
+    {
+      if(s[i]==s[j])
+      {
+        f[i]++;
+        s[j]='0';
+      }
+    }
+}
+for(int i=0;i<f.length;i++)
+{
+if(s[i]!=' ' && s[i]!='0')
+  {
+    System.out.println(s[i] +" -"+f[i]);
+  }
+}
+}
+}
+  
