@@ -1,0 +1,21 @@
+character of string is upperchase then convert it into lowercase:
+
+
+code</>:
+
+import java.util.Scanner;
+class Main{
+public static vodi main(String args[])
+{
+Scanner s=new Scanner(System.in);
+String str=s.next();
+String s1="";
+for(int i=0;i<str.length();i++)
+{
+  if(str.charAt(i)<='a' && str.charAt(i)>='z')
+      s1=s1+(char)(str.charAt(i)-32);
+  else
+       s1=s1+(char)(str.charAt(i)+32);
+}
+}
+}
